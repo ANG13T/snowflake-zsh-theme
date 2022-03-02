@@ -17,5 +17,14 @@ get_arrow(){
     echo '%(?.%{$fg_bold[cyan]%}➜.%{$fg_bold[red]%}➜%f) %{$reset_color%}'
 }
 
-PROMPT="%n $(snowflake_icon) $(get_arrow)"
+get_user() {
+    echo '%n@%m'
+}
+
+get_path(){
+    echo '%{$fg[cyan]%}%~'
+}
+
+PROMPT="$(get_user) $(get_path) $(snowflake_icon) 
+%(?.%{$fg_bold[cyan]%}➜.%{$fg_bold[red]%}➜%f) %{$reset_color%} "
 RPROMPT='$(git_prompt_info) $(get_time) %{$reset_color%}'
