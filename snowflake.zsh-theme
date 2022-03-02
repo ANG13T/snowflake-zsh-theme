@@ -1,7 +1,7 @@
- ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[magenta]%}\uE0A0 "
+ ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[blue]%}\uE0A0 "
  ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
  ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}!"
- ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[green]%}?"
+ ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[yellow]%}?"
  ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 get_time(){
@@ -18,13 +18,13 @@ get_arrow(){
 }
 
 get_user() {
-    echo '%n@%m'
+    echo '%{$fg[white]%}%n@%m%{$reset_color%}'
 }
 
 get_path(){
-    echo '%{$fg[cyan]%}%~'
+    echo '%{$fg[cyan]%}%B%~%b'
 }
 
-PROMPT="$(get_user) $(get_path) $(snowflake_icon) 
-%(?.%{$fg_bold[cyan]%}➜.%{$fg_bold[red]%}➜%f) %{$reset_color%} "
+PROMPT="$(get_path) $(get_user) 
+❄ %(?.%{$fg_bold[cyan]%}➜.%{$fg_bold[red]%}➜%f) %{$reset_color%} "
 RPROMPT='$(git_prompt_info) $(get_time) %{$reset_color%}'
