@@ -1,11 +1,11 @@
- ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[blue]%}\uE0A0 "
+ ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}\uE0A0 "
  ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
  ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}!"
  ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[yellow]%}?"
  ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 get_time(){
-    echo '%S %* %s'
+    echo '%{$fg[blue]%} %S %* %s %{$reset_color%}'
 }
 
 snowflake_icon(){
