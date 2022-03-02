@@ -11,5 +11,5 @@ get_arrow(){
     echo '%(?.%{$fg_bold[cyan]%}➜.%{$fg_bold[red]%}➜%f) %{$reset_color%}'
 }
 
-PROMPT="$(snowflake_icon) "
+PROMPT="$(snowflake_icon) $(get_arrow)"
 RPROMPT='$(get_time) %{$reset_color%}'
