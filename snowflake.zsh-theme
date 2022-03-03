@@ -5,7 +5,7 @@
  ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 get_time(){
-    echo '%{$fg[blue]%} %S %* %s %{$reset_color%}'
+    echo '%S %* %s'
 }
 
 snowflake_icon(){
@@ -26,5 +26,5 @@ get_path(){
 }
 
 PROMPT="$(get_path) $(get_user) 
-❄ %(?.%{$fg_bold[cyan]%}➜.%{$fg_bold[red]%}➜%f) %{$reset_color%} "
+❄ %(?.%{$fg_bold[cyan]%}➜.%{$fg_bold[red]%}➜%f)%{$reset_color%} "
 RPROMPT='$(git_prompt_info) $(get_time) %{$reset_color%}'
