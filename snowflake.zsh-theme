@@ -1,4 +1,4 @@
- ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}\uE0A0 "
+ ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%} "
  ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
  ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}!"
  ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[yellow]%}?"
@@ -18,7 +18,7 @@ get_arrow(){
 }
 
 get_user() {
-    echo '%{$fg[white]%}%n@%m%{$reset_color%}'
+    echo '(%{$fg[white]%}%n@%m%{$reset_color%})'
 }
 
 get_path(){
