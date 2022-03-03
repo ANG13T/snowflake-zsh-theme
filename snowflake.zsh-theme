@@ -1,6 +1,6 @@
  # vim:ft=zsh ts=2 sw=2 sts=2
  #
- # Snowflake Theme - https://gist.github.com/3712874
+ # Snowflake Theme - https://github.com/angelina-tsuboi/snowflake-zsh-theme
  # An elegant, simple, and neat ZSH theme 
  #
  # GOALS:
@@ -36,6 +36,7 @@ get_path(){
     echo '%{$fg[cyan]%}%B%~%b'
 }
 
-PROMPT="$(get_path) $(get_user) 
+PROMPT="
+$(get_path) $(get_user) 
 $(snowflake_icon) $(get_arrow) "
 RPROMPT='$(git_prompt_info) $(get_time) %{$reset_color%}'
