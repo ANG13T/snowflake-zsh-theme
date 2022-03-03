@@ -10,4 +10,19 @@ An elegant, simple, and neat ZSH theme
 
 ❄ A cool color palette that harmonizes with dark themes
 
-## Installation
+## Set Up
+
+1. Clone the Repository
+```
+git clone https://github.com/angelina-tsuboi/snowflake-zsh-theme.git
+```
+
+2. Create a symlink of **snowflake.zsh-theme** in **.oh-my-zsh/themes/**. You can use the **omz-installation.sh** file:
+```
+./omz-installation.sh
+```
+
+3. Configure the theme in your **.zshrc** file:
+```
+ZSH_THEME="snowflake"
+```
