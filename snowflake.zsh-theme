@@ -38,5 +38,5 @@ get_path(){
 
 PROMPT="
 $(get_path) $(get_user) 
-$(snowflake_icon) $(get_arrow) "
+$(snowflake_icon) $(get_arrow)"
 RPROMPT='$(git_prompt_info) $(get_time) %{$reset_color%}'
