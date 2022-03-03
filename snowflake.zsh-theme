@@ -26,5 +26,5 @@ get_path(){
 }
 
 PROMPT="$(get_path) $(get_user) 
-❄ %(?.%{$fg_bold[cyan]%}➜.%{$fg_bold[red]%}➜%f)%{$reset_color%} "
+$(snowflake_icon) $(get_arrow) "
 RPROMPT='$(git_prompt_info) $(get_time) %{$reset_color%}'
