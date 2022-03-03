@@ -1,3 +1,14 @@
+ # vim:ft=zsh ts=2 sw=2 sts=2
+ #
+ # Snowflake Theme - https://gist.github.com/3712874
+ # An elegant, simple, and neat ZSH theme 
+ #
+ # GOALS:
+ # ❄ Display relevant information in an organized manner
+ # ❄ Provide a simple, aesthetically pleasing display 
+ # ❄ Cool color palette that harmonizes with dark themes
+
+
  ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%} "
  ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
  ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}!"
